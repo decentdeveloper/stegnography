@@ -1,2 +1,15 @@
-# stegnography
-Data Hiding in Images using Steganography and obscure transfer/storage using Visual Cryptography
+
+## An overview:
+There are tools and methods of encrypting the image in today’s world but there are not enough tools to provide a robust security to that encrypted image. Here by the method of static analyzing the pixel values of the image, we can get the hidden message inside the image after applying Stereographic manipulation. This is done by one of the most famous algorithms, RS analysis. With the use of LSB replace, it was easy to detect the hidden message. Digital watermarking was also one of the popular conventional methods in this field of securing the data to be conveyed. Steganalysis must be conducted for every image that is to be made for conveying the secret data. RS Steganalysis was far better than LSB Steganalysis as it suffered from many attacks in the
+recent times.
+This proposed system will have a message and an image as cover to this message. Message will be stored in the LSB of the image. The pixel characteristics and properties have to be maintained after the embedding of secret message. This image is now called as “steg-image”. Here in LSB, the binary representation of the secret message replaces the least significant bits in the cover image to for steg-image. According to Kerchoff’s principle of assumption, only key is kept secret but not the algorithm. This key serves the purpose of finding the location of pixel of the secret message.
+Bitmap images are used generally for this. The simple implementation of the LSB technique is called as BlindHide. As this is more prone to attack, an application is used to randomize the location of the bits. Here in this application, HideSeek, an advanced of version of BlindHide is used. But the changes made by these two mechanisms are visible to naked eye, which is not the idea to implement. So, Laplace formula is used here. This project consists of two important algorithms, Genetic algorithm steganography and Visual cryptography. The steg-image here is the input for encryption using visual cryptography.
+
+##	Algorithm:
+
+
+The process of making algorithm makes the work flow faster and easier. The algorithm for our proposed concept is as follows:
+Read image and text from sender. Implement any of the present steganography techniques on them. There are many random number generations, swapping and many in the algorithm. There are some ways in the execution which modify the chromosomes of the image. Correlation is also calculated accordingly. And then embedding is done. After that visual cryptography comes into the execution which takes in the returned steg-image as input. And at receiver’s side, extraction is done. After the image pass through this module, shares of the image are produced. The shares are generated in such a way that they have to be merged for the construction of the decrypted hidden message inside the shares all together. In case of decoding the message, pixel expansion effect is eliminated because of implementing the random number generation and their allocation on the cover image.
+ 
+
+
